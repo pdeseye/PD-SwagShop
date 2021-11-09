@@ -1,4 +1,4 @@
-import { Resource } from '../models/resource'
+import { Resource } from '../models/resource.js'
 
 function show(req, res){
     Resource.findById(req.params.id, function(err, resource) {
