@@ -1,4 +1,4 @@
-import mongoose  from 'mongoose'
+import mongoose from "mongoose"
 
 const Schema = mongoose.Schema
 
@@ -10,18 +10,18 @@ const reviewSchema = new Schema({
     timestamps: true
 })
 
-const resourceSchema = new Schema ({
+const quiltSchema = new Schema({
     title: String,
-    description: String,
-    link: String,
+    created: String,
     imageUrl: String,
+    description: String,
     reviews: [reviewSchema]
 }, {
     timestamps: true
 })
 
-const Resource = mongoose.model('Resource', resourceSchema)
+const Quilt = mongoose.model('Quilt', quiltSchema)
 
 export {
-  Resource
+  Quilt
 }

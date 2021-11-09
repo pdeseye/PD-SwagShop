@@ -1,12 +1,5 @@
 import { Resource } from '../models/resource'
 
-module.exports = {
-    index,
-    create,
-    new: newResource,
-    show
-}
-
 function show(req, res){
     Resource.findById(req.params.id, function(err, resource) {
         res.render('resources/show', {title: `${resource.title}`, resource, user: req.user})
@@ -30,4 +23,11 @@ function index(req, res) {
     .then(resources => {
       res.render('resources/index', { title: 'Resources', user: req.user, resources })
     })
+}
+
+export {
+  index,
+  create,
+  newResource as new,
+  show
 }

@@ -1,0 +1,33 @@
+<%- include('../partials/header') %>
+
+<h3>New piece page</h3>
+
+<div class="new-art-div">
+    <form id="new-art-form" action="/quilts" method="POST">
+        <div class="form-item">
+            <label>Title:</label>
+            <input type="text" name="title">
+            <br>
+        </div>
+        <div class="form-item">
+            <label>Created:</label>
+            <input type="text" name="created">
+            <br>
+        </div>
+        <div class="form-item">
+            <label>Image Url:</label>
+            <input type="text" name="imageUrl">
+            <br>
+        </div>
+        <div class="form-item">
+            <label class="description-label" for="description">Description: </label>
+            <textarea id="description" name="description" cols="30" rows="4"></textarea>
+            <br>
+        </div>
+        <div class="form-item">
+            <input class="btn" type="submit" value="Add Piece">
+        </div>
+    </form>
+</div>  
+
+<%- include('../partials/footer') %>

@@ -1,0 +1,20 @@
+<%- include('../partials/header') %>
+
+<h3>Gallery</h3>
+
+<div class="quilt-container">
+    <% quilts.forEach(quilt=> { %>
+        <div class="card bg-dark text-white" id="card-div" style="width: 20rem;">
+            <img src="<%= quilt.imageUrl %>" class="card-img" alt="...">
+            <div class="card-img-overlay" id="card-content">
+                <h5 class="card-title"><%= quilt.title %></h5>
+                <a href="/quilts/<%= quilt._id%>" id="details-btn" class="btn btn-primary">Details</a>
+            </div>
+        </div>
+    <% }) %>
+</div>
+    
+<a href="/quiltss/new" class="btn btn-primary" id="main-page-btn">Add New Piece</a>
+
+
+<%- include('../partials/footer') %>
