@@ -21,10 +21,12 @@ function create(req, res) {
 function index(req, res) {
     Resource.find({})
     .then(resources => {
-      res.render('resources/index', { title: 'Resources', user: req.user, resources })
+      res.render('resources/index', { title: 'Resources', user: req.user, resources: resources })
     })
 }
-
+// router.get('/', function (req, res) {
+//   res.render('index', { title: 'Home Page', user: req.user ? req.user : null })
+// })
 export {
   index,
   create,

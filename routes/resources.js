@@ -13,6 +13,11 @@ function isLoggedIn(req, res, next) {
   res.redirect("/auth/google");
 }
 
+function isSuperUser(req, res, next) {
+  if (req.isAuthenticated() && req.user.email == "desaibpayal@gmail.com") return next();
+  res.redirect("/auth/google");
+}
+
 export {
   router
 }
