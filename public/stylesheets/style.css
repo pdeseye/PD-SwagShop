@@ -45,6 +45,7 @@ body > nav {
   margin-bottom: 10px;
   text-align: center;
 }
+
 h1 {
   font-size: 100px;
   text-align: center;
@@ -134,7 +135,7 @@ table td {
   text-align: center;
 }
 
-.resource-container, .woodart-container {
+.resource-container, .quilt-container {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   justify-items: center;
