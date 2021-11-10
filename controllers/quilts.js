@@ -20,7 +20,6 @@ function edit(req,res) {
 }
 
 function deleteQuilt(req,res){
-    console.log('Email', req.user.email)
     if (req.user.email === 'desaibpayal@gmail.com') {
         Quilt.findByIdAndRemove(req.params.id, function() {
             res.redirect('/quilts')
