@@ -67,7 +67,7 @@ p {
 }
 
 a {
-  color: #9b814b;
+  color: #351dbe;
   font-weight: bold;
 }
 
@@ -113,6 +113,8 @@ label {
 
 .details-text {
   text-align: center;
+  color: black;
+  font-weight: medium
 }
 
 .show-btn {
