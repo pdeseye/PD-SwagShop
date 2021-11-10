@@ -36,7 +36,7 @@ h3 {
   font-size: 50px;
   margin-top: 20px;
   margin-bottom: 25px;
-  color: #9b814b;
+  color: #351dbe;
 }
 
 p {
@@ -191,7 +191,7 @@ table td {
 }
 
 .btn:hover, #main-page-btn:hover {
-  background-color: #b89a5d;
+  background-color: grey;
   color: black;
 }
 
