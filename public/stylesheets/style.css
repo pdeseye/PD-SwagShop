@@ -26,7 +26,13 @@ body > nav {
 h1 {
   font-size: 100px;
   text-align: center;
-  margin-top: 250px;
+  margin-top: 200px;
+  color: purple;
+  font-weight: bold
+}
+h2 {
+  font-size: 90px;
+  text-align: center;
   color: purple;
   font-weight: bold
 }
