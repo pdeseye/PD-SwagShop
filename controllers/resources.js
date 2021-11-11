@@ -24,12 +24,21 @@ function index(req, res) {
       res.render('resources/index', { title: 'Resources', user: req.user, resources: resources })
     })
 }
-// router.get('/', function (req, res) {
-//   res.render('index', { title: 'Home Page', user: req.user ? req.user : null })
-// })
+
+
+function createReview(req, res) {
+    Resource.findById(req.params.id, function(err, resource) {
+        resource.reviews.push(req.body)
+        resource.save(function(err) {
+            res.redirect(`/resources/${resource._id}`)
+        })
+    })
+}
+
 export {
   index,
   create,
   newResource as new,
-  show
+  show,
+  createReview
 }

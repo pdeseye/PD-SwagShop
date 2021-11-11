@@ -4,7 +4,7 @@
 <h3>Edit <%= quilt.title %> </h3>
 
 <div class="edit-art-div">
-    <form id="edit-art-form" action="/quilts/<%= quilts.id %>?_method=PUT" method="POST">
+    <form id="edit-art-form" action="/quilts/<%= quilt.id %>?_method=PUT" method="POST">
         <div class="form-item">
             <label>Title:</label>
             <input type="text" name="title" value="<%= quilt.title %> ">

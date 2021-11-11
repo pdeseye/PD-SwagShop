@@ -58,6 +58,15 @@ function index(req, res) {
     })
 }
 
+function createQuiltReview(req, res) {
+    Quilt.findById(req.params.id, function(err, quilt) {
+        quilt.reviews.push(req.body)
+        quilt.save(function(err) {
+            res.redirect(`/quilts/${quilt._id}`)
+        })
+    })
+}
+
 export {
   index,
   show,
@@ -65,5 +74,6 @@ export {
   create,
   deleteQuilt as delete,
   edit,
-  update
+  update,
+  createQuiltReview
 }

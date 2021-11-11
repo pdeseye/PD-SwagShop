@@ -9,6 +9,7 @@ router.get('/:id/edit', isLoggedIn, quiltsCtrl.edit)
 router.get('/:id', quiltsCtrl.show)
 router.put('/:id', isLoggedIn, quiltsCtrl.update)
 router.delete('/:id', isLoggedIn, quiltsCtrl.delete)
+router.post('/:id/reviews', isLoggedIn, quiltsCtrl.createQuiltReview)
 
 function isLoggedIn(req, res, next) {
   if (req.isAuthenticated()) return next();
