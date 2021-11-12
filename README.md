@@ -3,10 +3,8 @@ PD's SwagShop was inspired from my love for quilting and wanting to share it wit
 
 ## :camera: PD's SwagShop Screenshots
 
-![alt text](./images/screenshot1.png)
-![alt text](./images/screenshot2.png)
-![alt text](./images/screenshot3.png)
-![alt text](./images/screenshot4.png)
+
+
 
 ## :point_right: [Try Me Out!](https://pd-swagshop.herokuapp.com/)
 You can check out my Trello board [HERE!](https://trello.com/b/m9UX3j0R/pds-swagshop)
