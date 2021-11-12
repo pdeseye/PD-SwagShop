@@ -1,10 +1,15 @@
 ## :notebook: Background:
-PD's SwagShop was inspired from my love for quilting and wanting to share it with the rest of the world. I wanted to create an app where I could post quilts that I had worked on or wanted to work on. 
+PD's SwagShop was inspired from my love for quilting and wanting to share it with the rest of the world. I wanted to create an app where I could post quilts that I had worked on and have people come leave their thoughts on them. I also wanted to provide a resource page where people could find easy access to find information on quilting.
 
 ## :camera: PD's SwagShop Screenshots
 
+![alt text](./images/screenshot1.png)
+![alt text](./images/screenshot2.png)
+![alt text](./images/screenshot3.png)
+![alt text](./images/screenshot4.png)
 
-## :point_right: [Try Me Out!]()
+## :point_right: [Try Me Out!](https://pd-swagshop.herokuapp.com/)
+You can check out my Trello board [HERE!](https://trello.com/b/m9UX3j0R/pds-swagshop)
 
 ## :star: Technologies Used
 - JavaScript
